@@ -28,16 +28,16 @@ public class Arithmetic {
         double taxPercent=0.06; //tax 
         
         double totalSockCost$ = ((int) (nSocks*sockCost$*100))/100.0;   //total cost of socks
-        double totalSockCostAfterTax = ((int) (totalSockCost$*taxPercent*100))/100.0; //socks after tax 
+        double totalSockCostAfterTax = ((int) ((totalSockCost$*taxPercent+totalSockCost$)*100))/100.0; //socks after tax 
         
         double totalglassCost$ = ((int) (nGlasses*glassCost$*100))/100.0; //total cost of glass 
-        double totalglassAfterTax = ((int) (totalglassCost$*taxPercent*100))/100.0; //glass after tax
+        double totalglassAfterTax = ((int) ((totalglassCost$*taxPercent+totalglassCost$)*100))/100.0; //glass after tax
         
         double totalenvelopCost$ = nEnvelopes*envelopeCost$; // total cost of envelopes
-        double totalenvelopAfterTax = ((int) (totalenvelopCost$*taxPercent*100))/100.0; //envelopes after tax 
+        double totalenvelopAfterTax = ((int) ((totalenvelopCost$*taxPercent+totalenvelopCost$)*100))/100.0; //envelopes after tax 
         
         double totalCostBeforeTax$ = ((int) ((totalSockCost$ + totalglassCost$ + totalenvelopCost$)*100))/100.0;
-        double totalCostAfterTax$ = ((int) (totalCostBeforeTax$*taxPercent*100))/100.0; 
+        double totalCostAfterTax$ = ((int) ((totalCostBeforeTax$*taxPercent+totalCostBeforeTax$)*100))/100.0; 
         
         //print out the results 
         System.out.println("The cost of socks before tax: $"+totalSockCost$+"\nThe cost of sockd after tax: $"+totalSockCostAfterTax);
