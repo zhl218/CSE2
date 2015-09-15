@@ -16,18 +16,27 @@ public class Timer {
         int dinnerTime = myScanner.nextInt (); 
     
         //calculation 
-        int hours; 
-        int minutes; 
-        int time = dinnerTime-currentTime; 
-        hours = (int) time/100; 
-        minutes = (int) (time%100);
+        int currentHours; 
+        int currentMinutes; 
+        currentHours = (int) currentTime/100; 
+        currentMinutes = (int) (currentTime%100);
+        
+        int dinnerHours; 
+        int dinnerMinutes; 
+        dinnerHours = (int) dinnerTime/100; 
+        dinnerMinutes = (int) (dinnerTime%100); 
+        
+        int hours = dinnerHours-currentHours; 
+        int minutes = dinnerMinutes-currentMinutes; 
+        
         
         if (minutes >60) {
             hours = hours +1; 
-            minutes = minutes - 60; 
+            minutes = minutes-60; 
         } 
         
         //outputs
+        System.out.println (minutes); 
         System.out.println ("You have " + hours + " hours and " + 
         minutes + " minutes until dinner."); 
         
