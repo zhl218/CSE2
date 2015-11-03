@@ -14,10 +14,6 @@ public class Stats {
         System.out.print ("Enter 5 double from smallest to largest: ");
         double num1 = input.nextDouble();
         double num2 = input.nextDouble();
-        double num3 = input.nextDouble();
-        double num4 = input.nextDouble();
-        double num5 = input.nextDouble();
-        
         while (true){
         if (num2 > num1){
         //double num2 = input.nextDouble();
@@ -26,9 +22,10 @@ public class Stats {
         else {
         System.out.print("The number should be greater than the previous numer.");
         System.out.print("Please enter the new double: ");
+        num2 = input.nextDouble();
         }
         }//end of while 
-        
+        double num3 = input.nextDouble();
         while (true){
         if (num3 > num2){
         //double num3 = input.nextDouble();
@@ -37,9 +34,10 @@ public class Stats {
         else {
         System.out.print("The number should be greater than the previous numer.");
         System.out.print("Please enter the new double: ");
+        num3 = input.nextDouble();
         }
         }//end of while 
-        
+        double num4 = input.nextDouble();
         while (true){
         if (num4 > num3){
         //double num4 = input.nextDouble();
@@ -48,9 +46,10 @@ public class Stats {
         else {
         System.out.print("The number should be greater than the previous numer.");
         System.out.print("Please enter the new double: ");
+        num4 = input.nextDouble();
         }
         }//end of while 
-        
+        double num5 = input.nextDouble();
         while (true){
         if (num5 > num4){
         //double num5 = input.nextDouble();
@@ -59,6 +58,7 @@ public class Stats {
         else {
         System.out.print("The number should be greater than the previous numer.");
         System.out.print("Please enter the new double: ");
+        num5 = input.nextDouble();
         }
         }//end of while 
         double calculatedMean = mean (num1, num2, num3, num4, num5);
