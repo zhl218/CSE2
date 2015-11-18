@@ -13,6 +13,9 @@ public class Search {
         for (int i = 0; i<array1.length- 1; i++){
             array1[i] = (int)(Math.random()*(100000));
         }
+        for (int i = 0; i<100; i++){
+            System.out.print (array1[i] + " ");
+        }
         //System.out.println(array1);
         int max1 = array1[0];
         int min1 = array1[0];
@@ -20,15 +23,15 @@ public class Search {
             if (array1[j]>max1){
                 max1 = array1[j];
             }
-            else 
-            max1 = array1[0];
+            //else 
+            //max1 = array1[0];
         }
         for (int k = 0; k<array1.length; k++){
             if (array1[k]<min1){
                 min1 = array1[k];
             }
-            else 
-            min1 = array1[0];
+            //else 
+            //min1 = array1[0];
         }
         System.out.println ("The maximum of array1 is: "+max1);
         System.out.println ("The minimum of array1 is: "+min1);

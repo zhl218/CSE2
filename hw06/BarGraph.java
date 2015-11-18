@@ -40,7 +40,7 @@ public class BarGraph {
             }
             System.out.print("Sorry, you did not enter an integer. Try again: ");
             input.next();
-        }
+    
         int tueE = (int)(tueExpenses + 0.5); 
         
         System.out.print("Expenses for Wednesday: "); 
