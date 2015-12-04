@@ -123,7 +123,7 @@ public class CSE2Linear{
                     beg = midpoint + 1; 
                 }
                 else {
-                    end = midpoint -1;
+                    end = midpoint - 1;
                 }
                 if (beg > end){
                     System.out.println (searchNumber + " was not found in the list with " + iterations + " iterations");
